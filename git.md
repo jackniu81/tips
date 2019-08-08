@@ -7,3 +7,5 @@ git pull origin master
 
 git gc --prune=now
 
+## Shrink .git folder size
+git gc --prune=now
