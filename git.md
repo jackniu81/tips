@@ -10,6 +10,9 @@ git gc --prune=now
 ## Shrink .git folder size
 git gc --prune=now
 
+## git commit
+### empty commit
+git commit --allow-empty -m "Merge with conflict"
 
 ## git config
 ### Set global proxy
