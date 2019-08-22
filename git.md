@@ -20,5 +20,7 @@ git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.c
 
 
 ## tag
+```
 git tag "your_tag_name"
 git push origin --tags
+```
