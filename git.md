@@ -17,3 +17,8 @@ git commit --allow-empty -m "Merge with conflict"
 ## git config
 ### Set global proxy
 git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
+
+
+## tag
+git tag "your_tag_name"
+git push origin --tags
