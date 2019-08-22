@@ -1,5 +1,5 @@
 # Git Tips
-## Merge
+## Get code from other branch (e.g. master)
 
 git pull origin master
 
