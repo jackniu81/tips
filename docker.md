@@ -19,3 +19,26 @@ docker rmi -f $(docker images -a -q)
 
 # proxy
 https://stackoverflow.com/questions/23111631/cannot-download-docker-images-behind-a-proxy
+
+#Install
+## docker-compose
+Install Extra Packages for Enterprise Linux
+```
+$ sudo yum install epel-release
+```
+Install python-pip
+```
+$ sudo yum install -y python-pip
+```
+Then install Docker Compose:
+```
+$ sudo pip install docker-compose
+```
+You will also need to upgrade your Python packages on CentOS 7 to get docker-compose to run successfully:
+```
+$ sudo yum upgrade python*
+```
+To verify a successful Docker Compose installation, run:
+````
+$ docker-compose version
+```
