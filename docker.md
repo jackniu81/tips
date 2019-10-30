@@ -39,10 +39,12 @@ You will also need to upgrade your Python packages on CentOS 7 to get docker-com
 ```
 $ sudo yum upgrade python*
 ```
+
 To verify a successful Docker Compose installation, run:
 ```
 $ docker-compose version
 ```
+
 If still see not found error, run
 ```
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
