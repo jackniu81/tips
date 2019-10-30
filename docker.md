@@ -9,12 +9,17 @@
 sudo service docker restart
 ```
 
-# Delete all containers/images
+# Delete all containers/images, volume
 1) To delete all containers including its volumes use,
 2 ) To delete all the images,
 ```
 docker rm -vf $(docker ps -a -q)
 docker rmi -f $(docker images -a -q)
+```
+
+delete all volume
+```
+docker volume prune
 ```
 
 # proxy
