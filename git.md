@@ -24,3 +24,6 @@ git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.c
 git tag "your_tag_name"
 git push origin --tags
 ```
+
+## archive source to zip
+git archive -o source.zip HEAD
