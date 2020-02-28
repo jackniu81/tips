@@ -3,4 +3,6 @@
 
 # npm
 ## clean cache
-` npm cache verify
+```
+npm cache verify
+```
