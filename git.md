@@ -18,6 +18,22 @@ git commit --allow-empty -m "Merge with conflict"
 ### Set global proxy
 git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
 
+## Force to restore to a branch
+`git reset --hard origin/master`
+
+## (un)ignore files for submit
+```
+git update-index --assume-unchanged <file>
+git update-index --no-assume-unchanged <file>
+
+// e.g. 
+git update-index --assume-unchanged config.json
+git update-index --no-assume-unchanged config.json
+```
+
+## Merge but need to discard the changes
+git commit --allow-empty -m "Merge with conflict"
+
 
 ## tag
 ```
