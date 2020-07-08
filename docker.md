@@ -53,3 +53,10 @@ If still see not found error, run
 ```
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
+
+
+# maintenance
+## Clean unused docker images (e.g. for build server)
+```
+docker system prune -f
+```
