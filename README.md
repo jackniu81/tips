@@ -9,5 +9,6 @@ Tips all in one
 
 ## [Docker Tips](https://github.com/jackniu81/tips/blob/master/docker.md)
 
+## [CSS Tips](css.md)
 
 ## [Node.js/npm Tips](https://github.com/jackniu81/tips/blob/master/node_npm.md)
