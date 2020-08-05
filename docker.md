@@ -25,6 +25,13 @@ docker volume prune
 # proxy
 https://stackoverflow.com/questions/23111631/cannot-download-docker-images-behind-a-proxy
 
+# Docker-compose
+```
+# under the docker-compose.yml folder, run:
+$ docker-compose up -d
+$ docker-compose down
+```
+
 # Install
 ## docker-compose
 Install Extra Packages for Enterprise Linux
