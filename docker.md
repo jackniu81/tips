@@ -24,6 +24,26 @@ docker volume prune
 
 # proxy
 https://stackoverflow.com/questions/23111631/cannot-download-docker-images-behind-a-proxy
+https://docs.docker.com/config/daemon/systemd/
+
+```
+Create a systemd drop-in directory for the docker service:
+
+sudo mkdir -p /etc/systemd/system/docker.service.d
+Create a file named /etc/systemd/system/docker.service.d/http-proxy.conf that adds the HTTP_PROXY environment variable:
+
+[Service]
+Environment="HTTP_PROXY=http://proxy.example.com:80"
+If you are behind an HTTPS proxy server, set the HTTPS_PROXY environment variable:
+
+[Service]
+Environment="HTTPS_PROXY=https://proxy.example.com:443"
+Multiple environment variables can be set; to set both a non-HTTPS and a HTTPs proxy;
+
+[Service]
+Environment="HTTP_PROXY=http://proxy.example.com:80"
+Environment="HTTPS_PROXY=https://proxy.example.com:443"
+```
 
 # Docker-compose
 ```
