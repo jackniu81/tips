@@ -81,6 +81,14 @@ If still see not found error, run
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
+### docker-compose start/stop
+* start: `docker-compose up -d`
+* stop : `docker-compose down`
+
+### docker-compose configuration(docker-compose.yml)
+* Make docker auto start when reboot: 
+`restart: always`
+
 
 # maintenance
 ## Clean unused docker images (e.g. for build server)
