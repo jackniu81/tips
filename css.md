@@ -9,3 +9,17 @@
   <span style="vertical-align:middle">Perfectly centered</span>
 </div>
 ```
+
+
+## Center a Div Horizontally with Flexbox
+```html
+<div class="container">
+  <div class="child"></div>
+</div>
+```
+```css
+.container {
+  display: flex;
+  justify-content: center;
+}
+```
