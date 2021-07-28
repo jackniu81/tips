@@ -29,7 +29,12 @@ git update-index --no-assume-unchanged <file>
 // e.g. 
 git update-index --assume-unchanged config.json
 git update-index --no-assume-unchanged config.json
+
+// unignore all files
+git update-index --really-refresh
 ```
+
+
 
 ## Merge but need to discard the changes
 git commit --allow-empty -m "Merge with conflict"
