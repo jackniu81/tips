@@ -49,6 +49,16 @@ git push origin --tags
 ## archive source to zip
 git archive -o source.zip HEAD
 
+## undo last PUSH
+```
+git reset --hard HEAD~1
+git push --force
+```
+Rollback to certain commit
+```
+git reset --hard 543acea
+git push --force
+```
 ## clean repository
 
 ### Git Clean
