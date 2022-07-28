@@ -1,11 +1,26 @@
-# Git Tips
+Git Tips
+---------------
 ## Get code from other branch (e.g. master)
 
 git pull origin master
 
-## Clean .get folder to make it smaller
+## Clean .git folder to make it smaller
 
 git gc --prune=now
+
+# Remove all local branch
+
+windows:
+```
+for /f "tokens=*" %f in ('git branch ^| find /v "*"') do git branch -D %f
+```
+linux:
+```
+git branch --merged | grep -v \* | xargs git branch -D 
+```
+
+## remove all merged local branches
+git branch --merged main | grep -v "^\* main" | xargs -n 1 -r git branch -d
 
 ## Shrink .git folder size
 git gc --prune=now
