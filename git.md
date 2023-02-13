@@ -1,8 +1,8 @@
 Git Tips
 ---------------
-## Get code from other branch (e.g. master)
+## Get code from other branch (e.g. main)
 
-git pull origin master
+git pull origin main
 
 ## Clean .git folder to make it smaller
 
@@ -34,7 +34,7 @@ git commit --allow-empty -m "Merge with conflict"
 git config --global http.proxy http://proxyUsername:proxyPassword@proxy.server.com:port
 
 ## Force to restore to a branch
-`git reset --hard origin/master`
+`git reset --hard origin/main`
 
 ## (un)ignore files for submit
 ```
